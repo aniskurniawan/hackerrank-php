@@ -5,10 +5,10 @@ function plusMinus($arr) {
     $ZEROES = 2;
 
     $length = count($arr);
-    // declare the temp numbers to index positions
+    // nyatakan nomor temp ke posisi indeks
     $numbers = [0, 0, 0];
 
-    // determine the plusMinus of the numbers
+    // tentukan plusMinus dari angka-angka
     foreach($arr as $val){
         if($val === 0){
             $numbers[$ZEROES] = $numbers[$ZEROES] + 1;
