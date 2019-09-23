@@ -2,15 +2,16 @@
 function staircase($n) {
     $totalSteps = $n;
     $staircase = [];
-    // start from the right steps
+    
+    // mulai dari langkah yang benar
     for($n; $n>0; $n--){
         $stairs = [];
-        // proceed from left stair until the reach the final stair steps
-        // then gradually increase the starting stair
+        // lanjutkan dari staircase kiri hingga mencapai staircase akhir
+        // lalu secara bertahap tingkatkan staircase awal
         for($i=1; $i<=$n; $i++){
-            // if it reached the final step print the stairs "#" else the its spaces
+            // jika sudah mencapai langkah terakhir cetak staircase "#" lain jika spasi
             if($i == $n){
-                // calculate the total stairs to print
+                // hitung total staircase yang akan dicetak
                 $totalPrintOfStairs = ($totalSteps - $n) + 1;
                 for($totalPrintOfStairs; $totalPrintOfStairs>0; $totalPrintOfStairs--){
                  array_push($stairs, "#");
@@ -22,7 +23,7 @@ function staircase($n) {
         }
     }
 
-    // print the staircases
+    // cetak staircase
     foreach($staircase as $stairs){
         foreach($stairs as $stair){
             echo $stair;
