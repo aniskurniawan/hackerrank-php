@@ -1,3 +1,4 @@
+<?php
 function compareTriplets($a, $b) {
     $length = count($a);
     $aliceScore = 0;
@@ -14,3 +15,4 @@ function compareTriplets($a, $b) {
     }
     return [$aliceScore, $bobScore];
 }
+?>
