@@ -1,3 +1,4 @@
+<?php
 function simpleArraySum($ar) {
     $sum = 0;
     foreach($ar as $value){
@@ -5,3 +6,4 @@ function simpleArraySum($ar) {
     }
     return $sum;
 }
+?>
